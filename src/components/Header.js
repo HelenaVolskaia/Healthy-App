@@ -27,11 +27,11 @@ class Header extends React.Component {
             <div className="container">
                   <a href="/" className="navbar-brand"><img src="/assets/logo.png" alt="logo"/></a>
                   <div onClick={()=> this.handleClick()} type="button" className='visible-xs pull-right '>
-                      {this.state.mobile ?  "x" : "="}
+                      {this.state.mobile ?  "x" : <span>&#9825;</span>}
                   </div>
                <div className={this.state.mobile ? 'row visible-xs': 'hidden'}>
                     <div className={this.state.mobile ? 'col-xs-12 m-nav-item': 'navbar-text'}> 323-284-7705</div>
-                    <div className={this.state.mobile ? 'col-xs-12 m-nav-item': 'navbar-text'}>{this.state.login ? 'Log Out' : ' Log in'}</div>
+                    <div onClick={()=> this.handleLogin()} className={this.state.mobile ? 'col-xs-12 m-nav-item': 'navbar-text'}>{this.state.login ? 'Log Out' : ' Log in'}</div>
                </div>
                <div className='hidden-xs nav navbar-nav navbar-right'>
                     <div className="navbar-text ">323-284-7705</div>

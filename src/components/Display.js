@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import Chat from './Chat';
 
 class Display extends Component {
   render() {
-    // console.log("section in props", this.props)
     return (
       <div className={ this.props.active === 'welcome' ? " hidden-xs" : "visible"}>
         {
@@ -21,21 +21,10 @@ class Display extends Component {
               {this.props.description}
             </div>
           </div>
+        },
+        { this.props.active === 'Find a Doctor' &&
+          <Chat {...this.props}></Chat>
         }
-        <div className="chat">
-          {
-              this.props.chat &&
-              this.props.chat.map((item, index) => {
-                return (
-                    <div >
-                     <p key={index}  className="from-them"> {this.props.chat[index]} </p>
-                    </div>
-                  )
-              })
-            }
-
-        </div>
-              <input type="text"/>
       </div>
     );
   }

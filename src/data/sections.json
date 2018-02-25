@@ -3,7 +3,7 @@
 		"i": "../assets/dr.svg",
 		"name" : "Find a Doctor",
 		"description": "JOANY can help you find a doctor that is covered under your plan",
-		"chat": ["Hello Ray", "What type of doctor are you lookig for?"]
+		"chat": ["Hello Ray", "What type of doctor are you looking for?"]
 	},
 	{
 		"i": "../assets/pills.svg",
