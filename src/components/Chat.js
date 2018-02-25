@@ -9,7 +9,6 @@ class Chat extends React.Component {
     };
   }
   onChange(e) {
-    console.log(e.key)
     this.setState({
       msg: e.target.value
     })
