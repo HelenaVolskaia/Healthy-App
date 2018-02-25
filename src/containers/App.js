@@ -14,7 +14,6 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick (section){
-    console.log("click", section)
     this.setState({
       active: section.name,
       description: section.description,
@@ -23,7 +22,6 @@ class App extends Component {
     })
   }
   render() {
-    console.log("state", this.state)
     return (
       <div className="App">
          <Header></Header>

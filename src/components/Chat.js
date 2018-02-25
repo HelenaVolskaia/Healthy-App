@@ -31,9 +31,8 @@ class Chat extends React.Component {
               this.props.chat &&
               this.props.chat.map((item, index) => {
                 return (
-                    <div >
-                     <p key={index}  className="from-them"> {this.props.chat[index]}, {index === 0 &&  <i class="em em-wave"></i>} </p>
-
+                    <div key={index}>
+                     <p key={index}  className="from-them"> {this.props.chat[index]}, {index === 0 &&  <i className="em em-wave"></i>} </p>
                     </div>
                   )
               })
@@ -41,7 +40,7 @@ class Chat extends React.Component {
           {
              this.state.msgs.map((item, index) => {
                 return (
-                    <div >
+                    <div key={index}>
                      <p key={index}  className="from-me"> {this.state.msgs[index]} </p>
                     </div>
                   )

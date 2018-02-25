@@ -2,22 +2,9 @@ import React from 'react';
 const sections = require('../data/sections.json');
 
 class Sections extends React.Component {
-  // constructor(props) {
-  // super(props);
-  //   this.state = {
-  //     active: 'welcome'
-  //   }
-  // }
-  // handleClick (section){
-  //   // console.log(section)
-  //   this.setState({
-  //     active: section.name,
-  //     description: section.description
-  //   })
-  // }
   render(){
     return (
-      <div  className={`col-sm-6 sections  ${this.props.active != 'welcome' && "hidden-xs"}`}>
+      <div  className={`col-sm-6 sections  ${this.props.active !== 'welcome' && "hidden-xs"}`}>
         <h4 className="col-xs-12"> Welcome, Ray! How we can help you?</h4>
         <div className="row">
           {
