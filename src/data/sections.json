@@ -1,0 +1,28 @@
+[
+	{
+		"i": "../assets/dr.svg",
+		"name" : "Find a Doctor",
+		"description": "JOANY can help you find a doctor that is covered under your plan",
+		"chat": ["Hello Ray", "What type of doctor are you lookig for?"]
+	},
+	{
+		"i": "../assets/pills.svg",
+		"name" : "Prescription",
+		"description": "Need to find a plan that covers your meds? We can also fetch pricing of meds on any health plan"
+	},
+	{
+		"i": "../assets/bills.svg",
+		"name" : "Help with a bill",
+		"description": "If you have questions about a surprise bill or want to contest it, send us a photo of it and we'll take care of it"
+	},
+	{
+		"i": "../assets/family.svg",
+		"name" : "Add a family member",
+		"description": "Add a family member to your plan"
+	},
+	{
+		"i": "../assets/other.svg",
+		"name" : "Ask us anything",
+		"description": "What else can we help you with? We're ready to help"
+	}
+]
